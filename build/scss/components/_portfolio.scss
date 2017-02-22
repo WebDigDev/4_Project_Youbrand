@@ -1,0 +1,166 @@
+
+.main-header_portfolio {
+		min-height: 0;
+		margin-bottom: 60px;
+		background: $main-color;
+}
+
+.portfolio {
+	margin-bottom: 80px;
+	font-size: 0;
+	padding: 10px;
+}
+
+.portfolio__title {
+	font-size: 16px;
+	color: #fff;
+	display: inline-block;
+	vertical-align: top;
+	margin-right: 50px;
+	margin-bottom: 50px;
+}
+
+.portfolio__btn-box {
+	display: inline-block;
+	vertical-align: top;
+
+}
+
+.portfolio__btn-item {
+	display: inline-block;
+	vertical-align: bottom;
+	margin: 0;
+	padding: 0;
+	margin-right: 50px;
+	background: none;
+	border: none;
+	font-size: 11px;
+	color: #566674;
+	outline: none;
+		&:hover {
+			color: $accent-color;
+
+	}
+
+}
+.portfolio__btn-item.active {
+	color: $accent-color;
+}
+.portfolio__tab-item-tetx {
+	font-size: 11px;
+	margin-bottom: 25px;
+
+
+}
+
+
+
+.portfolio__tab-inner {
+	display: inline-block;
+	vertical-align: top;
+	position: relative;
+	padding: 10px;
+	 &:hover .portfolio__tab-inner-text {
+	 	opacity: 1;
+	 }
+
+}
+
+.portfolio__tab-inner_big {
+	width: 50%;
+
+
+	img {
+		display: block;
+		// width: 480px;
+		// height: 240px;
+		width: 100%;
+		height: auto;
+	}
+}
+
+.portfolio__tab-inner_small {
+	width: 25%;
+
+	img {
+		display: block;
+		// width: 230px;
+		// height: 240px;
+		width: 100%;
+		height: auto;
+	}
+}
+
+
+.portfolio__tab-inner-text {
+	position: absolute;
+	background-color: #e94b89;
+	top: 0;
+	right: 0;
+	left: 0;
+	bottom: 0;
+	opacity: 0;
+	transition: 1s;
+	z-index: 10;
+	.portfolio__tab-inner-text-play {
+		display: block;
+		width: 70px;
+		height: 70px;
+		position: absolute;
+		top: 50%;
+		left: -35px;
+		transform: translateY(-50%);
+		background: url('../img/portfolio-item.png') no-repeat;
+	}
+
+
+}
+.portfolio__tab-inner-text-name{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+    transform: translate(-50%, -50%);
+	h2 {
+		margin: 0;
+		padding: 0;
+		font-size: 24px;
+		font-weight: 500;
+		line-height: 25px;
+		color: #000;
+		margin-bottom: 5px;
+	}
+}
+.portfolio__tab-inner-text-last-name {
+	font-size: 12px;
+	font-weight: 400;
+	line-height: 25px;
+	color: #000;
+	text-align: center;
+}
+
+.portfolio__tab-inner-text-link{
+	position: absolute;
+	bottom: 5%;
+	left: 50%;
+	transform: translateX(-50%);
+	.portfolio__tab-inner-text-link-more {
+		margin-bottom: 10px;
+	}
+	a {
+		text-decoration: none;
+		color: #000;
+		font-size: 12px;
+		i {
+			margin-left: 25px;
+		}
+	}
+
+}
+
+.portfolio__tab-item {
+	display: none;
+}
+
+.portfolio__tab-item.active {
+	display: block;
+}

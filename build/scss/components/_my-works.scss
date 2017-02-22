@@ -1,0 +1,145 @@
+.my-works__tab-buttons {
+	margin-bottom: 80px;
+}
+
+.my-works__tab-button-item {
+	margin: 0;
+	padding: 0;
+	background: none;
+	border: none;
+	margin-right: 35px;
+	color: #566674;
+	outline: none;
+	&:hover {
+		color: #fff;
+	}
+}
+
+.my-works__tab-button-item.active {
+	color: #fff;
+}
+.tabslider__item {
+	width: 256px;
+	height: 320px;
+	position: relative;
+
+
+}
+
+.tabslider__inner_big {
+	img {
+		width: 236px;
+		height: 300px;
+	}
+}
+
+.tabslider__inner_small {
+	img {
+		width: 249px;
+		height: 140px;
+	}
+}
+
+
+.tabslider__inner {
+	position: relative;
+	padding: 10px;
+	&:hover .tabslider__item-text {
+		opacity: 0.85;
+	}
+}
+.tabslider__item-text {
+	position: absolute;
+	background-color: #e94b89;
+	top: 0;
+	right: 0;
+	left: 0;
+	bottom: 0;
+	opacity: 0;
+	transition: 1s;
+}
+.tabslider__item-text-name{
+	position: absolute;
+	top: 40%;
+	left: 50%;
+    transform: translate(-50%);
+	h2 {
+		margin: 0;
+		padding: 0;
+		font-size: 24px;
+		font-weight: 500;
+		line-height: 25px;
+		color: #000;
+		margin-bottom: 5px;
+	}
+}
+.tabslider__item-text-last-name {
+	font-size: 12px;
+	font-weight: 400;
+	line-height: 25px;
+	color: #000;
+	text-align: center;
+}
+
+.tabslider__item-text-link{
+	position: absolute;
+	bottom: 5%;
+	left: 50%;
+	transform: translateX(-50%);
+	.tabslider__item-text-link-more {
+		margin-bottom: 10px;
+	}
+	a {
+		text-decoration: none;
+		color: #000;
+		font-size: 12px;
+		i {
+			margin-left: 25px;
+		}
+	}
+
+}
+
+.tabslider__inner_small {
+	.tabslider__item-text-name{
+		top: 30%;
+	}
+	h2 {
+		margin-bottom: 0;
+	}
+	.tabslider__item-text-link-more {
+		margin-bottom: 0;
+	}
+}
+.my-works__box-tabs{
+	position: relative;
+	margin-bottom: 150px;
+	&::before {
+		content: "";
+		position: absolute;
+		height: 310px;
+		width: 150px;
+		right: 0;
+		top: 10px;
+		background: linear-gradient(  to right, transparent, $main-color 90%);
+		z-index: 10;
+	}
+	&::after {
+		content: "";
+		position: absolute;
+		height: 310px;
+		width: 150px;
+		left: 0;
+		top: 10px;
+		background: linear-gradient(  to left, transparent, $main-color 90%);
+		z-index: 10;
+	}
+}
+
+.my-works__tab-item.active {
+	display: block;
+}
+
+.my-works__tab-item {
+	display: none;
+}

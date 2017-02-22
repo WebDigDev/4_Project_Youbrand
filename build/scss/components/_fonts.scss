@@ -1,0 +1,22 @@
+@import "bourbon";
+@font-face {
+	font-family: 'Gotham Pro';
+	src: url('../fonts/subset-GothamPro.eot');
+	src: url('../fonts/subset-GothamPro.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/subset-GothamPro.woff2') format('woff2'),
+		url('../fonts/subset-GothamPro.woff') format('woff'),
+		url('../fonts/subset-GothamPro.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Gotham Pro';
+	src: url('../fonts/subset-GothamPro-Medium.eot');
+	src: url('../fonts/subset-GothamPro-Medium.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/subset-GothamPro-Medium.woff2') format('woff2'),
+		url('../fonts/subset-GothamPro-Medium.woff') format('woff'),
+		url('../fonts/subset-GothamPro-Medium.ttf') format('truetype');
+	font-weight: 500;
+	font-style: normal;
+}

@@ -1,0 +1,418 @@
+@import "bourbon";
+
+/*==========  Desktop First Method  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px) {
+
+}
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 1024px) {
+	.wrapper {
+		max-width: 768px;
+	}
+	.main-header {
+		margin-bottom: 40px;
+	}
+	.main-header__logo {
+		width: 325px;
+	}
+
+	.main-header {
+		min-height: 700px;
+	}
+	.my-works__tab-buttons {
+		margin-bottom: 60px;
+	}
+
+	.my-works__box-tabs{
+		margin-bottom: 100px;
+	}
+
+	.features__items-item {
+		width: 365px;
+		margin-right: 20px;
+	}
+	.features__items-item:nth-child(even) {
+		margin-right: 0;
+	}
+
+	.features {
+		margin-bottom: 100px;
+	}
+
+	.service__title {
+		margin-bottom: 40px;
+	}
+
+	.feedback__text, .feedback__form {
+		width: 350px;
+	}
+	.feedback__text {
+		margin-right: 40px;
+	}
+
+	.feedback__form {
+		textarea {
+			width: 350px;
+		}
+		input {
+			width: 350px;
+		}
+		label[for="file"] {
+			margin-top: 20px;
+			margin-bottom: 20px;
+			display: block;
+		}
+
+	}
+	footer {
+	.footer__portfolio, .footer__advantage, .footer__service {
+		margin-right: 120px;
+	}
+	.footer__contact {
+		margin-right: 0;
+	}
+}
+
+.my-works__tab-buttons {
+	margin-bottom: 40px;
+	text-align: center;
+}
+
+.my-works__box-tabs{
+	margin-bottom: 50px;
+}
+
+.features__title {
+	text-align: center;
+	margin-bottom: 40px;
+}
+
+.features__items {
+	text-align: center;
+}
+
+.features__items-item {
+	width: 365px;
+	margin-right: 20px;
+}
+.features__items-item:nth-child(even) {
+	margin-right: 0;
+}
+
+.features {
+	margin-bottom: 100px;
+}
+
+.service__title {
+	text-align: center;
+	margin-bottom: 40px;
+}
+
+.main-header_portfolio {
+	min-height: 0;
+}
+}
+@media only screen and (max-width : 873px) {
+	.service {
+		.owl-carousel .owl-nav.disabled {
+			font-size: 30px;
+			.owl-prev {
+				top: 105%;
+				left: 40%;
+				transform: translateX(-50%);
+			}
+
+			.owl-next {
+				top: 105%;
+				right: 30%;
+				transform: translateX(-50%);
+			}
+		}
+	}
+	.portfolio {
+		margin-bottom: 60px;
+	}
+	.main-header_portfolio {
+		min-height: 0;
+		.main-header__top {
+			padding-top: 20px;
+		}
+	}
+
+	.portfolio__tab-inner-text-name {
+		h2 {
+			font-size: 18px;
+		}
+	}
+
+}
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+
+	/*Disable Animation on Mobile Devices*/
+	.animated {
+		/*CSS transitions*/
+		-o-transition-property: none !important;
+		-moz-transition-property: none !important;
+		-ms-transition-property: none !important;
+		-webkit-transition-property: none !important;
+		transition-property: none !important;
+		/*CSS transforms*/
+		-o-transform: none !important;
+		-moz-transform: none !important;
+		-ms-transform: none !important;
+		-webkit-transform: none !important;
+		transform: none !important;
+		/*CSS animations*/
+		-webkit-animation: none !important;
+		-moz-animation: none !important;
+		-o-animation: none !important;
+		-ms-animation: none !important;
+		animation: none !important;
+	}
+	.wrapper {
+		max-width: 100%;
+	}
+	.main-header {
+		min-height: 400px;
+		background: $main-color;
+	}
+	.main-header__top {
+		padding-top: 20px;
+		.main-header__top__menu {
+			float: none;
+			text-align: center;
+			margin-bottom: 40px;
+		}
+		.main-header__top__social {
+			float: none;
+			text-align: center;
+		}
+
+	}
+	.service {
+		margin-bottom: 100px;
+	}
+	.feedback {
+		text-align: center;
+	}
+	.feedback__text, .feedback__form {
+		width: auto;
+		text-align: center;
+		padding: 0 20px;
+	}
+	.feedback__text {
+		margin: 0;
+	}
+	.feedback__form  {
+		legend {
+			margin: 0;
+			margin-bottom: 40px;
+			width: 100%;
+		}
+		input[type="text"] {
+			margin: 0;
+			margin-bottom: 25px;
+		}
+
+		label[for="file"] {
+			padding-left: 0;
+			margin-right: 0;
+			display: block;
+			max-width: 350px;
+			margin: 20px auto;
+			&::before {
+			left: 20px;;
+			top: 1px;
+
+			}
+		}
+	}
+	.service__box {
+		text-align: center;
+	}
+	footer {
+		text-align: center;
+	.footer__portfolio, .footer__advantage, .footer__service {
+		margin-right: 80px;
+	}
+	.footer__contact {
+
+	}
+}
+.main-header_portfolio {
+	min-height: 0;
+}
+
+.portfolio__tab-inner-text {
+
+.portfolio__tab-inner-text-play {
+	display: none;
+}
+}
+
+.portfolio__title {
+	margin-bottom: 20px;
+}
+
+.portfolio {
+	margin-bottom: 40px;
+}
+
+.main-header__top .main-header__top__menu {
+	margin-bottom: 20px;
+}
+}
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px) {
+	.main-header__top__menu li {
+		margin: 0 15px;
+	}
+	.my-works__box-tabs {
+		&::before {
+			display: none;
+		}
+		&::after {
+			display: none;
+		}
+	}
+
+	.features__items {
+		.features__items-item {
+			margin: 0;
+			padding: 0 10px;
+		}
+	}
+
+	.features__items-item {
+		width: auto;
+
+	}
+
+	.feedback__text {
+		margin: 0;
+		padding: 0 20px;
+	}
+
+	.feedback__form  {
+		width: 100%;
+
+		textarea {
+			width: 100%;
+			margin: 0 auto;
+		}
+		legend {
+			margin: 0;
+			margin-bottom: 40px;
+			width: 100%;
+		}
+		input[type="text"] {
+			margin: 0;
+			margin-bottom: 25px;
+			width: 100%;
+		}
+		input[type="tel"],input[type="submit"] {
+			width: 100%;
+		}
+
+		label[for="file"] {
+			padding-left: 0;
+			margin-right: 0;
+			display: block;
+			max-width: auto;
+			margin: 20px auto;
+			&::before {
+			left: 20px;;
+			top: 1px;
+
+			}
+		}
+	}
+	footer {
+		text-align: left;
+	.footer__portfolio, .footer__advantage, .footer__service,.footer__contact {
+		padding: 0 20px;
+		width: 45%;
+		margin-right: 0;
+
+	}
+	.footer__service {
+		margin-bottom: 30px;
+	}
+	.footer__contact {
+		.fotter__contact-tel {
+		span {
+			font-size: 11px;
+		}
+	}
+	}
+
+}
+
+.service {
+	.owl-carousel .owl-nav.disabled {
+		.owl-prev {
+			display: none;
+		}
+
+		.owl-next {
+			display: none;
+		}
+	}
+}
+.portfolio__tab-inner_big {
+	width: 100%;
+}
+
+.portfolio__tab-inner_small {
+	width: 100%;
+}
+.portfolio__btn-item {
+	margin-right: 30px;
+}
+.main-header__top .main-header__top__menu {
+	margin-bottom: 20px;
+}
+}
+
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px) {
+	/**/
+}
+
+
+/*==========  Mobile First Method  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px) {
+	/**/
+}
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px) {
+	/**/
+}
+
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+	/**/
+}
+
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+	/**/
+}
+
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+	/**/
+}

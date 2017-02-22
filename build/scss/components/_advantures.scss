@@ -1,0 +1,32 @@
+.features {
+	margin-bottom: 140px;
+}
+
+.features__title {
+	font-size: 18px;
+	font-weight: 500;
+	color: #fff;
+	margin-bottom: 30px;
+}
+
+.features__items-item {
+	display: inline-block;
+	vertical-align: top;
+	width: 235px;
+	font-size: 12px;
+	line-height: 25px;
+	font-weight: 400;
+	margin-right: 15px;
+
+}
+
+.features__items-item-title {
+	margin-bottom: 40px;
+}
+
+.features__items-item-img {
+	width: 30px;
+	height: 30px;
+	margin-bottom: 50px;
+	display: inline-block;
+}

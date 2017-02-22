@@ -1,0 +1,96 @@
+.feedback {
+	font-size: 0;
+	margin-bottom: 70px;
+}
+
+.feedback__text, .feedback__form {
+	display: inline-block;
+	vertical-align: top;
+	font-size: 14px;
+	line-height: 25px;
+	width: 500px;
+	h2, legend {
+		margin: 0;
+		padding: 0;
+		font-size: 18px;
+		font-weight: 500;
+		color: #fff;
+		margin-bottom: 55px;
+
+	}
+}
+
+.feedback__text {
+	margin-right: 20px;
+	p {
+		margin-bottom: 25px;
+	}
+}
+.feedback__form {
+	textarea {
+		width: 495px;
+		height: 200px;
+		padding: 30px;
+		background-color: $main-color;
+		border: 1px solid #43505c;
+		margin-bottom: 25px;
+		&:focus::-webkit-input-placeholder {
+				color: transparent;
+			}
+		&:focus::-moz-placeholder {
+			color: transparent;
+		}
+		&:focus {
+			outline: none;
+		}
+	}
+	input {
+		background-color: $main-color;
+		border-color: #43505c;
+		border: 1px solid #43505c;
+		padding: 20px 35px;
+		width: 235px;
+		padding-right: 0;
+		&:focus::-webkit-input-placeholder {
+				color: transparent;
+			}
+		&:focus::-moz-placeholder {
+			color: transparent;
+		}
+		&:focus {
+			outline: none;
+		}
+	}
+	input[type="text"] {
+		margin-right: 20px;
+		margin-bottom: 25px;
+	}
+	input[type="file"] {
+		display: none;
+	}
+	label[for="file"] {
+		padding-left: 25px;
+		margin-right: 22px;
+		position: relative;
+		cursor: pointer;
+		&::before {
+			content: "\f0c6";
+			font-family: FontAwesome;
+			color: $accent-color;
+			position: absolute;
+			top: -7px;
+			left: 0;
+			font-size: 20px;
+		}
+	}
+	input[type="submit"] {
+		padding: 20px 55px;
+		color: #fff;
+		background-color: $accent-color;
+		transition: 0.5s;
+		&:hover {
+			color: $accent-color;
+			background-color: #fff;
+		}
+	}
+}
